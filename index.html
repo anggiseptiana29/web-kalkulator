@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title> calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+ <div class="calculator">
+     <div class="card" data-aos="zoom-in-up" data-aos-duration="3000">
+     <input type="text" class="calculator-screen" id="viewer" value="" disabled/>
+     <div class="calculator-keys">
+         <div class="row">
+           <button class="all-clear" value="C" onclick="clean()">AC</button>
+           <button class="clear" value="DEL" onclick="backpace()">C</button>
+           <button class="operator" value="/" onclick="view('/')">&divide;</button>
+    </div>
+    <div class="row">
+        <button class="number" value="7" onclick="view(7)">7</button>
+        <button class="number" value="8" onclick="view(8)">8</button>
+        <button class="number" value="9" onclick="view(9)">9</button>
+        <button class="operator" value="*" onclick="view('*')">&times;</button>
+    </div>
+    <div class="row">
+        <button class="number" value="4" onclick="view(4)">4</button>
+        <button class="number" value="5" onclick="view(5)">5</button>
+        <button class="number" value="6" onclick="view(6)">6</button>
+        <button class="operator" value="-" onclick="view('-')">-</button>
+    </div>
+    <div class="row">
+        <button class="number" value="1" onclick="view(1)">1</button>
+        <button class="number" value="2" onclick="view(2)">2</button>
+        <button class="number"value="3" onclick="view(3)">3</button>
+        <button class="operator" value="+" onclick="view('+')">+</button>
+    </div>
+    <div class="row">
+        <button class="number zero-btn" value="0" onclick="view(0)">0</button>
+        <button class="number zero-btn" value="000" onclick="view(00)">00</button>
+        <button class="decimal" value="." onclick="view('.')">.</button>
+        <button class="equal" value="=" onclick="equal('=')">=</button>
+     </div>
+     </div>
+     </div>
+  </div>
+  <div class="footer">
+        <div class="container">
+            <center>Copyright &copy; by Anggi Septiana</center>
+        </div>
+        </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <!-- <script>
+        AOS.init();
+    </script> -->
+ </body>
+</html>
